@@ -1,99 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <edmx:Edmx xmlns:sap="http://www.sap.com/Protocols/SAPData"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
 xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
-
-
 <edmx:DataServices m:DataServiceVersion="2.0">
-    
-    
     <Schema xml:lang="en"
     xmlns="http://schemas.microsoft.com/ado/2008/09/edm" sap:schema-version="1" Namespace="Z_FLIGHT_MODEL_SRV">
     
-    
     <EntityType sap:content-version="1" Name="scarr">
-        
-        
         <Key>
-            
-            <PropertyRef Name="Mandt"/>
-            
             <PropertyRef Name="Carrid"/>
-            
         </Key>
-        
         <Property Name="Mandt" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Client" sap:unicode="false" MaxLength="3" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Carrid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airline" sap:unicode="false" MaxLength="3" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Carrname" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airline" sap:unicode="false" MaxLength="20" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Currcode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airline Currency" sap:unicode="false" MaxLength="5" Nullable="false" Type="Edm.String" sap:semantics="currency-code"/>
-        
         <Property Name="Url" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="URL" sap:unicode="false" MaxLength="255" Nullable="false" Type="Edm.String"/>
-        
     </EntityType>
     
-    
-    <EntityType sap:content-version="1" Name="sflight">
-        
-        
+    <EntityType sap:content-version="1" Name="sflight">    
         <Key>
-            
             <PropertyRef Name="Mandt"/>
-            
             <PropertyRef Name="Carrid"/>
-            
             <PropertyRef Name="Connid"/>
-            
         </Key>
-        
         <Property Name="Mandt" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Client" sap:unicode="false" MaxLength="3" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Carrid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airline" sap:unicode="false" MaxLength="3" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Connid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Flight Number" sap:unicode="false" MaxLength="4" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Fldate" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Date" sap:unicode="false" Nullable="false" Type="Edm.DateTime" Precision="7"/>
-        
         <Property Name="Price" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airfare" sap:unicode="false" Nullable="false" Type="Edm.Decimal" Precision="16" sap:unit="Currency" Scale="3"/>
-        
         <Property Name="Currency" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Airline Currency" sap:unicode="false" MaxLength="5" Nullable="false" Type="Edm.String" sap:semantics="currency-code"/>
-        
         <Property Name="Planetype" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Plane Type" sap:unicode="false" MaxLength="10" Nullable="false" Type="Edm.String"/>
-        
         <Property Name="Seatsmax" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Max. capacity econ." sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
         <Property Name="Seatsocc" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Occupied econ." sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
         <Property Name="Paymentsum" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Total" sap:unicode="false" Nullable="false" Type="Edm.Decimal" Precision="18" sap:unit="Currency" Scale="3"/>
-        
         <Property Name="SeatsmaxB" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Max. capacity bus." sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
         <Property Name="SeatsoccB" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Occupied bus." sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
         <Property Name="SeatsmaxF" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Max. capacity 1st" sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
         <Property Name="SeatsoccF" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Occupied 1st" sap:unicode="false" Nullable="false" Type="Edm.Int32"/>
-        
     </EntityType>
-    
     
     <EntityContainer Name="Z_FLIGHT_MODEL_SRV_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true">
-        
         <EntitySet sap:content-version="1" Name="scarrSet" sap:updatable="false" sap:creatable="false" sap:pageable="false" sap:deletable="false" EntityType="Z_FLIGHT_MODEL_SRV.scarr"/>
-        
         <EntitySet sap:content-version="1" Name="sflightSet" sap:updatable="false" sap:creatable="false" sap:pageable="false" sap:deletable="false" EntityType="Z_FLIGHT_MODEL_SRV.sflight"/>
-        
     </EntityContainer>
-    
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://vhcalnplci.mshome.net:8000/sap/opu/odata/SAP/Z_FLIGHT_MODEL_SRV/$metadata" rel="self"/>
-    
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://vhcalnplci.mshome.net:8000/sap/opu/odata/SAP/Z_FLIGHT_MODEL_SRV/$metadata" rel="latest-version"/>
-    
 </Schema>
-
 </edmx:DataServices>
-
 </edmx:Edmx>

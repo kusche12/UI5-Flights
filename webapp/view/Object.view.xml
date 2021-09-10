@@ -9,17 +9,43 @@
 		headerPinnable="false"
 		toggleHeaderOnTitleClick="false"
 		busy="{objectView>/busy}"
-		busyIndicatorDelay="{objectView>/delay}">
+		busyIndicatorDelay="{objectView>/delay}"
+		>
 
 		<semantic:titleHeading>
 			<Title
-				text="{Carrid}"
+				text="{Carrname}"
 				level="H2"/>
 		</semantic:titleHeading>
 
+		<semantic:titleBreadcrumbs>
+            <Breadcrumbs>
+                <Link text="Home" press=".onNavBack" />
+            </Breadcrumbs>
+        </semantic:titleBreadcrumbs>
+
+
 		<semantic:headerContent>
-			<ObjectNumber
-			/>
+		<FlexBox direction="row" justifyContent="SpaceBetween" width="250px" >
+			<items>
+				<FlexBox direction="Column">
+				<items>
+					<ObjectIdentifier text="{i18n>objectPageMandtText}:" />
+					<ObjectIdentifier text="{i18n>objectPageCarrierIDText}:" />
+					<ObjectIdentifier text="{i18n>objectPageUrlText}:" />
+				</items>
+			</FlexBox>
+			<FlexBox direction="Column">
+				<items>
+					<ObjectNumber number="{Mandt}" />
+					<ObjectIdentifier text="{Carrid}" />
+					<Text text="{Url}" />
+				</items>
+			</FlexBox>
+			</items>
+		</FlexBox>
+			
+			
 		</semantic:headerContent>
 
 		<semantic:sendEmailAction>
