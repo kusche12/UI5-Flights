@@ -1,0 +1,65 @@
+[
+    {
+        "Mandt" : "001",
+        "Carrid" : "AA",
+        "Carrname" : "American Airlines",
+        "Currcode" : "USD",
+        "Url" : "http://www.aa.com"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "AB",
+        "Carrname" : "Air Berlin",
+        "Currcode" : "EUR",
+        "Url" : "http://www.airberlin.de"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "AC",
+        "Carrname" : "Air Canada",
+        "Currcode" : "CAD",
+        "Url" : "http://www.aircanada.ca"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "AF",
+        "Carrname" : "Air France",
+        "Currcode" : "EUR",
+        "Url" : "http://www.airfrance.fr"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "AZ",
+        "Carrname" : "Alitalia",
+        "Currcode" : "EUR",
+        "Url" : "http://www.alitalia.it"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "BA",
+        "Carrname" : "British Airways",
+        "Currcode" : "GBP",
+        "Url" : "http://www.british-airways.com"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "CO",
+        "Carrname" : "Continental Airlines",
+        "Currcode" : "USD",
+        "Url" : "http://www.continental.com"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "DL",
+        "Carrname" : "Delta Airlines",
+        "Currcode" : "USD",
+        "Url" : "http://www.delta-air.com"
+    },
+    {
+        "Mandt" : "001",
+        "Carrid" : "FJ",
+        "Carrname" : "Air Pacific",
+        "Currcode" : "USD",
+        "Url" : "http://www.airpacific.com"
+    }
+]
