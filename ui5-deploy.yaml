@@ -14,10 +14,10 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: https://20.83.208.73:44300/sap/bc/ui5_ui5/ui2/ushell/shells/abap/Fiorilaunchpad.html#Shell-home
+          url: https://api.cf.us10.hana.ondemand.com
           scp: true
         app:
-          name: ZFLIGHTS
+          name: Z_FLIGHTS
           description: ""
           package: $TMP
           transport: ""
