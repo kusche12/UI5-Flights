@@ -1,0 +1,20 @@
+{
+    "base": "./dist",
+
+    "conn_usestrictssl" : false, 
+
+    "conn_server": "http://vhcalnplci.mshome.net:8000/sap/public/myssocntl?sap-client=001"
+
+    "conn_client" : "001", 
+
+    "conn_user": "DEVELOPER",        //  hana username
+
+    "conn_password": "Down1oad",   // hana password
+
+    "abap_package": "$TMP",       //package name
+
+    "abap_bsp": "ZFlightWorklist",  //Name of the file to create in server(should starts with "Z")
+
+    "abap_bsp_text": "Flight App through VSCode UI5 Tooling"    //Description for that
+
+}

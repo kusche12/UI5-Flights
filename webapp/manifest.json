@@ -13,7 +13,7 @@
 		"resources": "resources.json",
 		"dataSources": {
 			"mainService": {
-				"uri": "http://vhcalnplci.mshome.net:50000/sap/opu/odata/SAP/Z_FLIGHT_MODEL_SRV/",
+				"uri": "https://sapsbx15.redmond.corp.microsoft.com/sap/opu/odata/sap/ZGN_SFLIGHT_TEST_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
