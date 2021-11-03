@@ -14,10 +14,9 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: https://api.cf.us10.hana.ondemand.com
-          scp: true
+          url: http://localhost
         app:
-          name: Z_FLIGHTS
+          name: FLIGHTS
           description: ""
           package: $TMP
           transport: ""
