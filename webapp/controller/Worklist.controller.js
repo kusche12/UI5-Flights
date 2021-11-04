@@ -109,8 +109,8 @@ sap.ui.define([
 
 				if (sQuery && sQuery.length > 0) {
 					// TODO: Get case insensitive filtering to work on OData V2
-					aTableSearchState = [new Filter({ path: "Carrname", caseSensitive: false, operator: FilterOperator.Contains, value1: sQuery})];
-					// aTableSearchState = [new Filter("Carrname", FilterOperator.Contains, sQuery)];
+					// aTableSearchState = [new Filter({ path: "Carrname", caseSensitive: false, operator: FilterOperator.Contains, value1: sQuery})];
+					aTableSearchState = [new Filter("Carrname", FilterOperator.Contains, sQuery)];
 				}
 				this._applySearch(aTableSearchState);
 			}
